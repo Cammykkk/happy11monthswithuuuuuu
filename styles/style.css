@@ -84,29 +84,29 @@ body {
 .footer{
     color: var(--secondary-color)
 }
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     .intro-container {
-        padding: 10vw 12vw; /* Más generoso para espacios más pequeños */
-        border-radius: 12px;
+        padding: 8vw 10vw; /* Más proporción al viewport width para celulares grandes */
+        width: 95%;
+        border-width: 3px;
+        border-radius: 15px;
     }
 
     .game-title {
-        font-size: 1.8em; /* Tamaño ideal para la mayoría de iPhones en vertical */
-        margin-bottom: 30px;
-        text-shadow: 2px 2px 0px var(--secondary-color);
+        font-size: 2.3em; /* Optimizando para la legibilidad en celulares grandes */
+        margin-bottom: 35px;
+        text-shadow: 3px 3px 0px var(--secondary-color);
     }
 
     .play-button {
-        padding: 1em 2em; /* Padding adecuado para la usabilidad táctil */
-        font-size: 1.1em;
-        border-width: 2px; /* Borde más fino */
+        padding: 1.2em 2.5em;
+        font-size: 1.4em;
+        border-width: 3px;
     }
 
     .footer {
-        font-size: 0.65em; /* Tamaño sutil para celulares pequeños */
-        padding: 10px;
-    }
-}
+        font-size: 0.75em; /* Ligera reducción para celulares */
+        padding: 12px;
    
 /* Animación de corazón */
 .heart-animation {
@@ -933,6 +933,7 @@ body {
     }
 
 }
+
 
 
 
