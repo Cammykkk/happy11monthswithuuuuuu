@@ -130,34 +130,7 @@ body {
     }
 }
 
-/* --- AJUSTES PARA CELULARES (horizontal y vertical, y tabletas pequeñas) --- */
-@media (max-width: 768px) {
-    .intro-container {
-        padding: 30px 40px;
-        width: 95%;
-        border-width: 3px;
-        border-radius: 15px;
-        /* QUITAMOS LA SOMBRA DE AQUÍ */
-    }
 
-    .game-title {
-        font-size: 2.5em;
-        margin-bottom: 40px;
-        text-shadow: 3px 3px 0px var(--secondary-color);
-    }
-
-    .play-button {
-        padding: 14px 30px;
-        font-size: 1.5em;
-        border-width: 3px;
-        /* QUITAMOS LA SOMBRA DE AQUÍ */
-    }
-
-    .footer {
-        font-size: 0.7em;
-        bottom: 10px;
-    }
-}
 
 /* --- AJUSTES PARA CELULARES PEQUEÑOS (vertical) --- */
 @media (max-width: 480px) {
@@ -996,5 +969,6 @@ body {
     }
 
 }
+
 
 
