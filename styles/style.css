@@ -23,7 +23,6 @@ body {
     background-image: url('https://static.vecteezy.com/system/resources/previews/042/818/355/non_2x/8bit-pixel-graphic-blue-sky-background-with-clouds-vector.jpg'); /* Imagen de fondo de videojuego */
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -35,47 +34,34 @@ body {
 }
 
 .intro-container {
-    background-color: rgba(0, 0, 0, 0); /* Fondo transparente */
-    padding:  8vh 10vw;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 50px 60px;
     border: var(--pixel-border);
-    border-radius: 20px;
-    /* QUITAMOS LA SOMBRA DE AQUÍ */
     animation: fadeIn 2s ease-out;
     position: relative;
     z-index: 2;
-    max-width: 900px;
-    width: 90%;
-    margin: auto;
-    box-sizing: border-box;
 }
 
 .game-title {
-    font-family: var(--game-font);
-    font-size: 4em;
+    font-size: 4.5em;
     color: var(--primary-color);
-    text-shadow: 5px 5px 0px var(--secondary-color); /* Esta sombra es del texto, no del borde */
-    margin-bottom: 100px;
+    text-shadow: 5px 5px 0px var(--secondary-color);
+    margin-bottom: 60px;
     animation: bounceIn 1.5s ease-out;
-    line-height: 1.2;
-    word-break: break-word;
 }
 
 .play-button {
     background-color: var(--secondary-color);
     color: var(--text-color);
     border: var(--pixel-border);
-    padding: 20px 45px;
-    font-size: 2.2em;
+    padding: 15px 40px;
+    font-size: 2em;
     cursor: pointer;
-    /* QUITAMOS LA SOMBRA DE AQUÍ */
+    box-shadow: var(--pixel-shadow);
     transition: transform 0.2s ease, background-color 0.2s ease;
     font-family: var(--game-font);
     position: relative;
     overflow: hidden;
-    display: inline-block;
-    text-decoration: none;
-    text-transform: uppercase;
-    box-sizing: border-box;
 }
 
 .play-button:hover {
@@ -87,75 +73,22 @@ body {
     transform: scale(0.95);
 }
 
-.footer {
-    color: var(--secondary-color);
-    font-family: var(--game-font);
-    font-size: 0.9em;
-    margin-top: 5vh;
+.footer{
+    color: var(--secondary-color)
+}
+   
+/* Animación de corazón */
+.heart-animation {
     position: absolute;
-    bottom: 20px;
-    width: 100%;
-    text-align: center;
-    z-index: 1;
-}
-
-/* ========================================= */
-/* === MEDIA QUERIES PARA ADAPTAR A DISPOSITIVOS === */
-/* ========================================= */
-
-/* --- AJUSTES PARA TABLETAS (horizontal y vertical) --- */
-@media (max-width: 1024px) {
-    .intro-container {
-        padding: 40px 50px;
-        border-radius: 18px;
-        /* QUITAMOS LA SOMBRA DE AQUÍ */
-    }
-
-    .game-title {
-        font-size: 3.5em;
-        margin-bottom: 50px;
-        text-shadow: 4px 4px 0px var(--secondary-color);
-    }
-
-    .play-button {
-        padding: 16px 40px;
-        font-size: 1.8em;
-        border-width: 3px; /* Mantener este borde si quieres */
-        /* QUITAMOS LA SOMBRA DE AQUÍ */
-    }
-
-    .footer {
-        font-size: 0.8em;
-        bottom: 15px;
-    }
-}
-
-
-
-/* --- AJUSTES PARA CELULARES PEQUEÑOS (vertical) --- */
-@media (max-width: 480px) {
-    .intro-container {
-        padding: 25px 30px;
-        border-radius: 10px;
-        /* QUITAMOS LA SOMBRA DE AQUÍ */
-    }
-
-    .game-title {
-        font-size: 1.8em;
-        margin-bottom: 30px;
-        text-shadow: 2px 2px 0px var(--secondary-color);
-    }
-
-    .play-button {
-        padding: 12px 25px;
-        font-size: 1.2em;
-        /* QUITAMOS LA SOMBRA DE AQUÍ */
-    }
-
-    .footer {
-        font-size: 0.6em;
-        bottom: 5px;
-    }
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 60px;
+    height: 60px;
+    background-color: var(--secondary-color);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    opacity: 0;
+    pointer-events: none;
 }
    
 /* Animación de corazón */
@@ -969,6 +902,7 @@ body {
     }
 
 }
+
 
 
 
