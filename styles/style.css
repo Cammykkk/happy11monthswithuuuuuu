@@ -36,9 +36,6 @@ body {
 .intro-container {
     background-color: rgba(0, 0, 0, 0); /* Fondo transparente */
     padding: 50px 60px; /* Relleno generoso para computadoras */
-    border: var(--pixel-border);
-    border-radius: 20px; /* Borde redondeado */
-    box-shadow: var(--pixel-shadow);
     animation: fadeIn 2s ease-out; /* Tu animación de entrada */
     position: relative;
     z-index: 2;
@@ -993,3 +990,4 @@ body {
     }
 
 }
+
