@@ -11,9 +11,6 @@
     --pixel-shadow: 6px 6px 0px rgba(0,0,0,0.5);
 }
 
-html {
-    height: 100%;
-}
 
 body {
     margin: 0;
@@ -83,31 +80,7 @@ body {
 
 .footer{
     color: var(--secondary-color)
-}
-@media (max-width: 768px) {
-    .intro-container {
-        padding: 8vw 10vw; /* Más proporción al viewport width para celulares grandes */
-        width: 95%;
-        border-width: 3px;
-        border-radius: 15px;
-    }
 
-    .game-title {
-        font-size: 2.3em; /* Optimizando para la legibilidad en celulares grandes */
-        margin-bottom: 35px;
-        text-shadow: 3px 3px 0px var(--secondary-color);
-    }
-
-    .play-button {
-        padding: 1.2em 2.5em;
-        font-size: 1.4em;
-        border-width: 3px;
-    }
-
-    .footer {
-        font-size: 0.75em; /* Ligera reducción para celulares */
-        padding: 12px;
-    }
    
 /* Animación de corazón */
 .heart-animation {
@@ -934,6 +907,7 @@ body {
     }
 
 }
+
 
 
 
