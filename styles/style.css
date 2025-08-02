@@ -107,6 +107,7 @@ body {
     .footer {
         font-size: 0.75em; /* Ligera reducción para celulares */
         padding: 12px;
+    }
    
 /* Animación de corazón */
 .heart-animation {
@@ -933,6 +934,7 @@ body {
     }
 
 }
+
 
 
 
