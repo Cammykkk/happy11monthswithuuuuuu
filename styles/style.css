@@ -158,7 +158,7 @@ body {
     .intro-container {
         padding: 25px 30px; /* Padding aún más reducido */
         border-radius: 10px; /* Menos redondeado para pantallas pequeñas */
-        box-shadow: 3px 3px 0px 0px var(--dark-shadow-color); /* Sombra mínima */
+       
     }
 
     .game-title {
@@ -990,4 +990,5 @@ body {
     }
 
 }
+
 
