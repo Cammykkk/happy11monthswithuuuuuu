@@ -39,7 +39,7 @@ body {
     border: var(--pixel-border);
     animation: fadeIn 2s ease-out;
     position: relative;
-    z-index: 2;
+    
 }
 
 .game-title {
@@ -902,6 +902,7 @@ body {
     }
 
 }
+
 
 
 
