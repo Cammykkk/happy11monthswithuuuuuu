@@ -1,6 +1,7 @@
 /* Importar fuente de estilo retro */
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
+
 :root {
     --game-font: 'Press Start 2P', cursive;
     --primary-color: #ffc0ed; /* Amarillo oro */
@@ -10,13 +11,20 @@
     --pixel-shadow: 6px 6px 0px rgba(0,0,0,0.5);
 }
 
+html {
+    height: 100%;
+}
+
 body {
     margin: 0;
+    padding: 0;
     font-family: var(--game-font);
     color: var(--text-color);
-    overflow-x: hidden; /* Evitar scroll horizontal */
-    background-color: var(--background-dark);
-}
+    background-color: var(--background-color);
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 
 /* --- ESTILOS DE LA PÁGINA INDEX (General) --- */
 .index-page {
@@ -75,6 +83,29 @@ body {
 
 .footer{
     color: var(--secondary-color)
+}
+@media (max-width: 480px) {
+    .intro-container {
+        padding: 10vw 12vw; /* Más generoso para espacios más pequeños */
+        border-radius: 12px;
+    }
+
+    .game-title {
+        font-size: 1.8em; /* Tamaño ideal para la mayoría de iPhones en vertical */
+        margin-bottom: 30px;
+        text-shadow: 2px 2px 0px var(--secondary-color);
+    }
+
+    .play-button {
+        padding: 1em 2em; /* Padding adecuado para la usabilidad táctil */
+        font-size: 1.1em;
+        border-width: 2px; /* Borde más fino */
+    }
+
+    .footer {
+        font-size: 0.65em; /* Tamaño sutil para celulares pequeños */
+        padding: 10px;
+    }
 }
    
 /* Animación de corazón */
@@ -902,6 +933,7 @@ body {
     }
 
 }
+
 
 
 
