@@ -18,16 +18,17 @@ body {
     background-color: var(--background-dark);
 }
 
+/* --- ESTILOS DE LA PÁGINA INDEX (General) --- */
 .index-page {
     background-image: url('https://static.vecteezy.com/system/resources/previews/042/818/355/non_2x/8bit-pixel-graphic-blue-sky-background-with-clouds-vector.jpg'); /* Imagen de fondo de videojuego */
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat; /* Asegurarse de que no se repita */
+    background-repeat: no-repeat;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Centra el contenido principal verticalmente */
-    align-items: center;     /* Centra el contenido principal horizontalmente */
+    justify-content: center;
+    align-items: center;
     text-align: center;
     position: relative;
     overflow: hidden;
@@ -35,35 +36,38 @@ body {
 
 .intro-container {
     background-color: rgba(0, 0, 0, 0); /* Fondo transparente */
-    padding: 50px 60px; /* Relleno generoso para computadoras */
-    animation: fadeIn 2s ease-out; /* Tu animación de entrada */
+    padding: 50px 60px;
+    border: var(--pixel-border);
+    border-radius: 20px;
+    /* QUITAMOS LA SOMBRA DE AQUÍ */
+    animation: fadeIn 2s ease-out;
     position: relative;
     z-index: 2;
-    max-width: 900px; /* Limita el ancho máximo en pantallas grandes */
-    width: 90%; /* Ocupa el 90% del ancho disponible */
-    margin: auto; /* Centra el contenedor con margen automático */
-    box-sizing: border-box; /* Incluye padding y border en el ancho total */
+    max-width: 900px;
+    width: 90%;
+    margin: auto;
+    box-sizing: border-box;
 }
 
 .game-title {
-    font-family: var(--game-font); /* Tu fuente pixelada */
-    font-size: 4.5em; /* Tamaño para computadoras */
+    font-family: var(--game-font);
+    font-size: 4.5em;
     color: var(--primary-color);
-    text-shadow: 5px 5px 0px var(--secondary-color);
+    text-shadow: 5px 5px 0px var(--secondary-color); /* Esta sombra es del texto, no del borde */
     margin-bottom: 60px;
-    animation: bounceIn 1.5s ease-out; /* Tu animación */
+    animation: bounceIn 1.5s ease-out;
     line-height: 1.2;
-    word-break: break-word; /* Permite que el texto se rompa en palabras largas */
+    word-break: break-word;
 }
 
 .play-button {
     background-color: var(--secondary-color);
     color: var(--text-color);
     border: var(--pixel-border);
-    padding: 18px 45px; /* Relleno para computadoras */
-    font-size: 2.2em; /* Tamaño para computadoras */
+    padding: 18px 45px;
+    font-size: 2.2em;
     cursor: pointer;
-    box-shadow: var(--pixel-shadow);
+    /* QUITAMOS LA SOMBRA DE AQUÍ */
     transition: transform 0.2s ease, background-color 0.2s ease;
     font-family: var(--game-font);
     position: relative;
@@ -71,12 +75,12 @@ body {
     display: inline-block;
     text-decoration: none;
     text-transform: uppercase;
-    box-sizing: border-box; /* Incluye padding y border en el ancho total */
+    box-sizing: border-box;
 }
 
 .play-button:hover {
     transform: scale(1.05);
-    background-color: #811649; /* Color de hover ajustado */
+    background-color: #811649;
 }
 
 .play-button:active {
@@ -86,10 +90,10 @@ body {
 .footer {
     color: var(--secondary-color);
     font-family: var(--game-font);
-    font-size: 0.9em; /* Tamaño para computadoras */
-    margin-top: 5vh; /* Margen superior responsivo */
-    position: absolute; /* Posicionamiento absoluto para que esté al final de la página */
-    bottom: 20px; /* Distancia desde el borde inferior */
+    font-size: 0.9em;
+    margin-top: 5vh;
+    position: absolute;
+    bottom: 20px;
     width: 100%;
     text-align: center;
     z-index: 1;
@@ -102,13 +106,13 @@ body {
 /* --- AJUSTES PARA TABLETAS (horizontal y vertical) --- */
 @media (max-width: 1024px) {
     .intro-container {
-        padding: 40px 50px; /* Un poco menos de padding */
+        padding: 40px 50px;
         border-radius: 18px;
-        box-shadow: 7px 7px 0px 0px var(--dark-shadow-color); /* Sombra ajustada */
+        /* QUITAMOS LA SOMBRA DE AQUÍ */
     }
 
     .game-title {
-        font-size: 3.5em; /* Reducir el título para tabletas */
+        font-size: 3.5em;
         margin-bottom: 50px;
         text-shadow: 4px 4px 0px var(--secondary-color);
     }
@@ -116,6 +120,8 @@ body {
     .play-button {
         padding: 16px 40px;
         font-size: 1.8em;
+        border-width: 3px; /* Mantener este borde si quieres */
+        /* QUITAMOS LA SOMBRA DE AQUÍ */
     }
 
     .footer {
@@ -127,15 +133,15 @@ body {
 /* --- AJUSTES PARA CELULARES (horizontal y vertical, y tabletas pequeñas) --- */
 @media (max-width: 768px) {
     .intro-container {
-        padding: 30px 40px; /* Más reducción de padding */
-        width: 95%; /* Ocupa más ancho en pantallas más pequeñas */
-        border-width: 3px; /* Borde un poco más delgado */
+        padding: 30px 40px;
+        width: 95%;
+        border-width: 3px;
         border-radius: 15px;
-        box-shadow: 5px 5px 0px 0px var(--dark-shadow-color);
+        /* QUITAMOS LA SOMBRA DE AQUÍ */
     }
 
     .game-title {
-        font-size: 2.5em; /* Tamaño ideal para celulares grandes/medianos */
+        font-size: 2.5em;
         margin-bottom: 40px;
         text-shadow: 3px 3px 0px var(--secondary-color);
     }
@@ -144,7 +150,7 @@ body {
         padding: 14px 30px;
         font-size: 1.5em;
         border-width: 3px;
-        box-shadow: 4px 4px 0px 0px var(--dark-shadow-color);
+        /* QUITAMOS LA SOMBRA DE AQUÍ */
     }
 
     .footer {
@@ -156,13 +162,13 @@ body {
 /* --- AJUSTES PARA CELULARES PEQUEÑOS (vertical) --- */
 @media (max-width: 480px) {
     .intro-container {
-        padding: 25px 30px; /* Padding aún más reducido */
-        border-radius: 10px; /* Menos redondeado para pantallas pequeñas */
-       
+        padding: 25px 30px;
+        border-radius: 10px;
+        /* QUITAMOS LA SOMBRA DE AQUÍ */
     }
 
     .game-title {
-        font-size: 1.8em; /* Tamaño para celulares pequeños */
+        font-size: 1.8em;
         margin-bottom: 30px;
         text-shadow: 2px 2px 0px var(--secondary-color);
     }
@@ -170,11 +176,11 @@ body {
     .play-button {
         padding: 12px 25px;
         font-size: 1.2em;
-        box-shadow: 3px 3px 0px 0px var(--dark-shadow-color);
+        /* QUITAMOS LA SOMBRA DE AQUÍ */
     }
 
     .footer {
-        font-size: 0.6em; /* Footer muy discreto */
+        font-size: 0.6em;
         bottom: 5px;
     }
 }
